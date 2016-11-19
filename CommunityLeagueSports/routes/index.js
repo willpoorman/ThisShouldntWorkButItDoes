@@ -4,6 +4,11 @@ var router = express.Router();
 // Database variables
 var mongoose = require('mongoose');
 var Test = mongoose.model('Test');
+var League = mongoose.model('League');
+var Match = mongoose.model('Match');
+var Organization = mongoose.model('Organization');
+var Team = mongoose.model('Team');
+var User = mongoose.model('User');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
