@@ -5,6 +5,14 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+// Database
+var mongoose = require('mongoose');
+require('./models/Tests');
+
+// Connect to database
+mongoose.connect('mongodb://localhost/CommunityLeagueSports');
+
+// Routes
 var index = require('./routes/index');
 var users = require('./routes/users');
 
