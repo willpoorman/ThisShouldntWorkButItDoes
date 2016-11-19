@@ -8,6 +8,11 @@ var bodyParser = require('body-parser');
 // Database
 var mongoose = require('mongoose');
 require('./models/Tests');
+require('./models/Team');
+require('./models/Organization');
+require('./models/Match');
+require('./models/User');
+require('./models/League');
 
 // Connect to database
 mongoose.Promise = global.Promise;
