@@ -15,6 +15,31 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+/* GET Add Organization page. */
+router.get('/addOrganization', function(req, res, next) {
+  res.render('addOrg');
+});
+
+/* GET Add League page. */
+router.get('/addLeague', function(req, res, next) {
+  res.render('addLeague');
+});
+
+/* GET Add Team page. */
+router.get('/addTeam', function(req, res, next) {
+  res.render('addTeam');
+});
+
+/* GET Add User page. */
+router.get('/addUser', function(req, res, next) {
+  res.render('addUser');
+});
+
+/* GET Add Match page. */
+router.get('/addMatch', function(req, res, next) {
+  res.render('addMatch');
+});
+
 // GET tests
 router.get('/tests', function(req, res, next) {
   Test.find(function(err, tests){

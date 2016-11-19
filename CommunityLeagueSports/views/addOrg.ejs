@@ -1,14 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-Add an Organisation
+<title> Add an Organization </title>
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js"></script>
+  <script src="/javascripts/addOrg.js"></script>
 </head>
-<body>
-  <div>
-    <form name="addOrg" method="post" action="/organisations">
-    Organisation name:<input type="text" name="orgName"></br>
-    <input type="submit" value="Submit">
-  </form>
+<body ng-app="CommunityLeagueSports">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <div ui-view></div>
+    </div>
   </div>
+
+  <script type="text/ng-template" id="/add.html">
+    <div class="page-header">
+      <h1>Organizations</h1>
+    </div>
+
+    <form ng-submit="addOrganization()"
+      style="margin-top:30px;">
+      <h3>Add a new organization</h3>
+
+      <div class="form-group">
+        <input type="text"
+          class="form-control"
+          placeholder="name"
+          ng-model="name"></input>
+      </div>
+      <button type="submit" class="btn btn-block btn-primary">Submit</button>
+    </form>
+
+    <h3>Current Organizations</h3>
+    <div ng-repeat="organization in organizations">
+      <span style="font-size:20px; margin-left:10px;">
+        {{organization.name}}
+      </span>
+    </div>
+  </script>
 </body>
 </html>
