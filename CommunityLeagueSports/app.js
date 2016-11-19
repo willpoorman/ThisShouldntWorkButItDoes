@@ -10,6 +10,7 @@ var mongoose = require('mongoose');
 require('./models/Tests');
 
 // Connect to database
+mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/CommunityLeagueSports');
 
 // Routes
