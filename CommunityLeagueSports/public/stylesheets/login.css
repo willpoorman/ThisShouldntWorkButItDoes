@@ -1,0 +1,25 @@
+div:first-of-type{
+  background: grey;
+}
+
+#login{
+  background-color: aquamarine;
+}
+
+#signup{
+  background-color: aquamarine;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+table{
+
+}

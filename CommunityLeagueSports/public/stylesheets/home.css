@@ -1,0 +1,24 @@
+table, th, td {
+    border: 1px solid black;
+    margin: 10px;
+}
+
+#title{
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  background-color: green;
+}
+
+#calendar{
+  width: 60%;
+  margin: auto;
+}
+
+.fc-scroller {
+   overflow-y: hidden !important;
+}
+
+.fc-day-grid-event > .fc-content {
+  white-space: inherit;
+}
