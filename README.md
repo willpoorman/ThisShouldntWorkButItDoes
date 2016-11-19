@@ -1,3 +1,5 @@
 # ThisShouldntWorkButItDoes
 JB Hunt Hackathon 2016 Project
-This is a test
+
+## What to do
+Install MEAN stack:[MEAN Stack Tutorial](https://thinkster.io/mean-stack-tutorial#creating-schemas-with-mongoose)
